@@ -59,13 +59,13 @@ export function Footer() {
             </li>
             <li className="flex gap-2.5">
               <IconPhone className="mt-0.5 h-4 w-4 shrink-0" />
-              <a href="tel:0022220810951" className="hover:text-white">
-                002 (02) 20810951
+              <a href="tel:2220810951" className="hover:text-white">
+                 (02) 20810951
               </a>
             </li>
             <li className="flex gap-2.5">
               <IconFax className="mt-0.5 h-4 w-4 shrink-0" />
-              <span>002 (02) 20810989</span>
+              <span>+20 (02) 20810989</span>
             </li>
             <li className="flex gap-2.5">
               <IconMail className="mt-0.5 h-4 w-4 shrink-0" />

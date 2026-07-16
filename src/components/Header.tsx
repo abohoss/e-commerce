@@ -28,9 +28,9 @@ export function Header() {
       <div className="hidden border-b border-border/70 bg-teal-900 text-teal-100 md:block">
         <Container className="flex h-9 items-center justify-between text-xs">
           <div className="flex items-center gap-5">
-            <a href="tel:0020201121283333" className="flex items-center gap-1.5 hover:text-white">
+            <a href="tel:+201121283333" className="flex items-center gap-1.5 hover:text-white">
               <IconPhone className="h-3.5 w-3.5" />
-              00201121283333
+              +201121283333
             </a>
             <a href="mailto:info@drugest.net" className="flex items-center gap-1.5 hover:text-white">
               <IconMail className="h-3.5 w-3.5" />

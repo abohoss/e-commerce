@@ -30,18 +30,18 @@ export default function ContactPage() {
               </li>
               <li className="flex gap-2.5">
                 <IconPhone className="mt-0.5 h-4 w-4 shrink-0 text-teal-700" />
-                <a href="tel:0022220810951" className="hover:text-ink">
-                  002 (02) 20810951
+                <a href="tel:2220810951" className="hover:text-ink">
+                   (02) 20810951
                 </a>
               </li>
               <li className="flex gap-2.5">
                 <IconFax className="mt-0.5 h-4 w-4 shrink-0 text-teal-700" />
-                002 (02) 20810989 (fax)
+                +20 2 20810989 (fax)
               </li>
               <li className="flex gap-2.5">
                 <IconPhone className="mt-0.5 h-4 w-4 shrink-0 text-teal-700" />
-                <a href="tel:00201121283333" className="hover:text-ink">
-                  0020 112 128 3333 (mobile)
+                <a href="tel:+201121283333" className="hover:text-ink">
+                  +20 112 128 3333 (mobile)
                 </a>
               </li>
               <li className="flex gap-2.5">
@@ -62,17 +62,17 @@ export default function ContactPage() {
               </li>
               <li className="flex gap-2.5">
                 <IconPhone className="mt-0.5 h-4 w-4 shrink-0 text-teal-700" />
-                <a href="tel:00202239270200" className="hover:text-ink">
-                  0020 (2) 23927020
+                <a href="tel:+202239270200" className="hover:text-ink">
+                  +20 (2) 23927020
                 </a>
                 <span className="text-ink-soft/60">/</span>
-                <a href="tel:00202239245200" className="hover:text-ink">
-                  23924520
+                <a href="tel:+202239245200" className="hover:text-ink">
+                  +20 (2) 23924520
                 </a>
               </li>
               <li className="flex gap-2.5">
                 <IconFax className="mt-0.5 h-4 w-4 shrink-0 text-teal-700" />
-                0020 (2) 23924478 (fax)
+                +20 (2) 23924478 (fax)
               </li>
             </ul>
           </div>
