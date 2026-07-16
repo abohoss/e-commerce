@@ -33,24 +33,39 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000).
 
-## Contact form
+## Contact
 
-The original site had **no contact form** — only a `mailto:` link. This
-rebuild adds a real form at `/contact`, posted through `/api/contact`
-(`src/app/api/contact/route.ts`), which forwards submissions to
-[Formspree](https://formspree.io).
+The contact page now points visitors directly to `info@drugest.net` instead
+of using a form. That avoids losing inquiries to an unconfigured backend.
 
-To make it actually deliver email:
+## News and admin data
 
-1. Create a free Formspree account and a form, and copy its endpoint
-   (`https://formspree.io/f/xxxxxxxx`).
-2. Set the environment variable `FORMSPREE_ENDPOINT` to that URL — locally in
-   `.env.local`, and in your Vercel project's Environment Variables.
+News posts and the admin login/password settings are stored in Postgres via
+the Vercel/Marketplace Postgres integration. The app creates two tables on
+first use:
 
-Until that variable is set, the form will show a friendly error asking
-visitors to email `info@drugest.net` directly instead of silently pretending
-to succeed — check the server logs for submissions received while
-unconfigured.
+- `admin_settings` for the singleton admin email/password record.
+- `news_posts` for published news items.
+
+The default admin login is `info@drugest.net` and `hamed1234` until you
+change it in `/admin`.
+
+To set this up on Vercel:
+
+1. Open your project in Vercel.
+2. Go to Storage, then add a Postgres integration from the Marketplace.
+   Vercel currently routes new Postgres setups through Neon, which is the
+   supported path for fresh projects.
+3. Attach the database to this project so Vercel injects the connection
+   environment variables automatically.
+4. Pull the variables locally with `vercel env pull .env.local` so the dev
+   server can connect too.
+5. Redeploy. The app will create the required tables automatically the first
+   time the admin or news routes run.
+
+If you prefer to pre-create the schema manually, the application code uses a
+singleton admin row and a `news_posts` table with `id`, `title`, `summary`,
+`body`, `published_at`, and `updated_at` columns.
 
 ## Content
 

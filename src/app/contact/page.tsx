@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { Container } from "@/components/Container";
 import { PageHeader } from "@/components/PageHeader";
-import { ContactForm } from "@/components/ContactForm";
-import { IconFax, IconMail, IconMapPin, IconPhone } from "@/components/icons";
+import { IconArrowRight, IconFax, IconMail, IconMapPin, IconPhone } from "@/components/icons";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -15,14 +14,38 @@ export default function ContactPage() {
     <>
       <PageHeader
         eyebrow="Contact"
-        title="Talk to the Drugest team."
-        description="Reach our scientific office in Nasr City or our Cairo branch — by phone, fax, email or the form below."
+        title="Send your inquiry by email."
+        description="For product questions, availability checks, or registration inquiries, email info@drugest.net and our team will reply as soon as possible."
       />
 
-      <Container className="grid gap-12 py-14 sm:py-16 lg:grid-cols-[1fr_1.2fr]">
-        <div className="flex flex-col gap-8">
+      <Container className="py-14 sm:py-16">
+        <div className="max-w-3xl">
+          <p className="font-mono text-xs font-medium uppercase tracking-[0.2em] text-teal-700">
+            Email first
+          </p>
+          <h2 className="mt-3 font-display text-2xl font-semibold tracking-tight text-ink sm:text-3xl">
+            If you have any inquiry, write to info@drugest.net.
+          </h2>
+          <p className="mt-4 max-w-2xl text-sm leading-relaxed text-ink-soft">
+            The mailbox is monitored by the Drugest team. Include the product
+            name, species, or registration topic in your message so we can route
+            it quickly.
+          </p>
+          <div className="mt-6 flex flex-wrap items-center gap-4">
+            <a
+              href="mailto:info@drugest.net"
+              className="inline-flex items-center gap-2 rounded-lg bg-teal-700 px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-teal-900"
+            >
+              Email info@drugest.net
+              <IconArrowRight className="h-4 w-4" />
+            </a>
+            <span className="text-sm text-ink-soft">We usually respond within one business day.</span>
+          </div>
+        </div>
+
+        <div className="mt-12 grid gap-10 lg:grid-cols-2">
           <div>
-            <h2 className="font-display text-lg font-semibold text-ink">Scientific office</h2>
+            <h3 className="font-display text-lg font-semibold text-ink">Scientific office</h3>
             <ul className="mt-4 flex flex-col gap-3 text-sm text-ink-soft">
               <li className="flex gap-2.5">
                 <IconMapPin className="mt-0.5 h-4 w-4 shrink-0 text-teal-700" />
@@ -31,7 +54,7 @@ export default function ContactPage() {
               <li className="flex gap-2.5">
                 <IconPhone className="mt-0.5 h-4 w-4 shrink-0 text-teal-700" />
                 <a href="tel:2220810951" className="hover:text-ink">
-                   (02) 20810951
+                  (02) 20810951
                 </a>
               </li>
               <li className="flex gap-2.5">
@@ -46,15 +69,15 @@ export default function ContactPage() {
               </li>
               <li className="flex gap-2.5">
                 <IconMail className="mt-0.5 h-4 w-4 shrink-0 text-teal-700" />
-                <a href="mailto:info@drugest.net" className="hover:text-ink">
+                <a href="mailto:info@drugest.net" className="font-semibold text-ink hover:text-teal-900">
                   info@drugest.net
                 </a>
               </li>
             </ul>
           </div>
 
-          <div className="border-t border-border pt-8">
-            <h2 className="font-display text-lg font-semibold text-ink">Cairo branch</h2>
+          <div>
+            <h3 className="font-display text-lg font-semibold text-ink">Cairo branch</h3>
             <ul className="mt-4 flex flex-col gap-3 text-sm text-ink-soft">
               <li className="flex gap-2.5">
                 <IconMapPin className="mt-0.5 h-4 w-4 shrink-0 text-teal-700" />
@@ -75,16 +98,6 @@ export default function ContactPage() {
                 +20 (2) 23924478 (fax)
               </li>
             </ul>
-          </div>
-        </div>
-
-        <div className="rounded-2xl border border-border bg-surface p-6 sm:p-8">
-          <h2 className="font-display text-lg font-semibold text-ink">Send a message</h2>
-          <p className="mt-1 text-sm text-ink-soft">
-            We usually reply within one business day.
-          </p>
-          <div className="mt-6">
-            <ContactForm />
           </div>
         </div>
       </Container>

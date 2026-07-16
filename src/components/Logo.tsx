@@ -9,13 +9,13 @@ export function Logo({ className = "" }) {
       aria-label="Drugest Pharmaceuticals — home"
     >
       {/* Kept your teal background wrapper. Added overflow-hidden in case the image touches the rounded edges */}
-      <span className="flex h-9 w-9 items-center justify-center overflow-hidden rounded-md bg-teal-700 text-paper transition-colors group-hover:bg-teal-900">
+      <span className="flex h-11 w-11 items-center justify-center overflow-hidden rounded-md text-paper transition-colors bg-paper/90">
         <Image
           src="/favicon.ico"
           alt="Drugest Pharmaceuticals Logo"
           width={20}
           height={20}
-          className="h-5 w-5 object-contain"
+          className="h-11 w-11 object-contain"
         />
       </span>
       <span className="flex flex-col leading-none">
