@@ -9,14 +9,12 @@ const columns = [
     links: [
       { href: "/products/large-animals", label: "Large Animals" },
       { href: "/products/poultry", label: "Poultry" },
-      { href: "/drugest-egypt", label: "Drugest Egypt" },
     ],
   },
   {
     title: "Company",
     links: [
       { href: "/about", label: "About" },
-      { href: "/gallery", label: "Gallery" },
       { href: "/news", label: "News" },
       { href: "/contact", label: "Contact" },
     ],
@@ -28,7 +26,7 @@ export function Footer() {
     <footer className="border-t border-border bg-teal-900 text-teal-100">
       <Container className="grid gap-10 py-14 md:grid-cols-[1.4fr_1fr_1fr_1.2fr]">
         <div className="max-w-xs">
-          <Logo className="[&_span]:text-paper [&_span.text-ink-soft]:text-teal-100/70" />
+          <Logo />
           <p className="mt-4 text-sm leading-relaxed text-teal-100/80">
             Registered veterinary formulations for large animals and poultry,
             toll-manufactured under GMP standards in Cairo, Egypt since 2004.

@@ -75,30 +75,6 @@ export default function ContactPage() {
               </li>
             </ul>
           </div>
-
-          <div>
-            <h3 className="font-display text-lg font-semibold text-ink">Cairo branch</h3>
-            <ul className="mt-4 flex flex-col gap-3 text-sm text-ink-soft">
-              <li className="flex gap-2.5">
-                <IconMapPin className="mt-0.5 h-4 w-4 shrink-0 text-teal-700" />
-                4 El-Shawarby St., Cairo
-              </li>
-              <li className="flex gap-2.5">
-                <IconPhone className="mt-0.5 h-4 w-4 shrink-0 text-teal-700" />
-                <a href="tel:+202239270200" className="hover:text-ink">
-                  +20 (2) 23927020
-                </a>
-                <span className="text-ink-soft/60">/</span>
-                <a href="tel:+202239245200" className="hover:text-ink">
-                  +20 (2) 23924520
-                </a>
-              </li>
-              <li className="flex gap-2.5">
-                <IconFax className="mt-0.5 h-4 w-4 shrink-0 text-teal-700" />
-                +20 (2) 23924478 (fax)
-              </li>
-            </ul>
-          </div>
         </div>
       </Container>
     </>

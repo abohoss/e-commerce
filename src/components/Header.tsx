@@ -15,7 +15,6 @@ const navLinks = [
   { href: "/about", label: "About" },
   { href: "/products", label: "Products", children: productLinks },
   { href: "/drugest-egypt", label: "Drugest Egypt" },
-  { href: "/gallery", label: "Gallery" },
   { href: "/news", label: "News" },
   { href: "/contact", label: "Contact" },
 ];

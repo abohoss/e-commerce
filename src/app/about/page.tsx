@@ -26,7 +26,7 @@ const timeline = [
   {
     year: "2004–present",
     title: "Catalog built out",
-    body: "Registration of veterinary products began and has grown to 23 formulations across large-animal and poultry medicine, chosen to match the needs of Egypt's veterinary market.",
+    body: "Registration of veterinary products began and has grown to 19 formulations across large-animal and poultry medicine, chosen to match the needs of Egypt's veterinary market.",
   },
   {
     year: "2013",
@@ -62,12 +62,10 @@ export default function AboutPage() {
               pharmaceutical and veterinary medicine fields.
             </p>
             <p>
-              The company started with a paid capital of EGP 3.5 million
-              against an authorized capital of EGP 15 million, and began by
-              registering veterinary products — a catalog that has since grown
-              to 23 formulations across large animals and poultry, each chosen
-              to match the needs of the veterinary market in Egypt and North
-              Africa.
+              The company began by registering veterinary products — a
+              catalog that has since grown to 19 formulations across large
+              animals and poultry, each chosen to match the needs of the
+              veterinary market in Egypt and North Africa.
             </p>
             <p>
               All products are toll-manufactured at the Arab Company for
@@ -78,7 +76,7 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <h2 className="mt-10 font-display text-xl font-semibold text-ink">Founding group</h2>
+          <h2 className="mt-10 font-display text-xl font-semibold text-ink">Board of Directors</h2>
           <ul className="mt-4 grid gap-3 sm:grid-cols-2">
             {founders.map((name) => (
               <li

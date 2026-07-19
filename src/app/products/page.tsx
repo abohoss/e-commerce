@@ -21,7 +21,7 @@ export default function ProductsPage() {
       <PageHeader
         eyebrow="Catalog"
         title="Every registered formulation, in one place."
-        description="23 formulations across two categories — each page carries full composition, dosage, withdrawal-time and storage detail."
+        description="19 formulations across two categories — each page carries full composition, dosage, withdrawal-time and storage detail."
       />
 
       <Container className="py-14 sm:py-16">

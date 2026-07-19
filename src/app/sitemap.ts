@@ -12,7 +12,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/products/large-animals",
     "/products/poultry",
     "/drugest-egypt",
-    "/gallery",
     "/news",
     "/contact",
   ].map((path) => ({

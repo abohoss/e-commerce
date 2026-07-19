@@ -62,25 +62,6 @@ export const products: Product[] = [
     manufacturer: "Arabcomed for Drugest Pharmaceuticals Company",
   },
   {
-    slug: "rafotest-7-5-injection",
-    name: "Rafotest 7.5%",
-    subtitle: "Injectable solution, 50 ml / 100 ml",
-    category: "large-animals",
-    form: "injection",
-    activeIngredient: "Rafoxanide",
-    regNo: "M.O.H. Reg. No. 2810/2006 vet.",
-    composition: "Each 100 ml contains:\nRafoxanide 7.5 g",
-    indications:
-      "Cattle, sheep and goats: highly effective against adult and immature liver flukes (Fasciola hepatica, F. gigantica), all stages of adult and immature Haemonchus contortus, and larval stages of the sheep nasal worm (Oestrus ovis).",
-    dosage: "By S/C injection only. 2 ml / 50 kg body weight.",
-    warnings:
-      "S/C injection only. Milk produced during treatment should be discarded — dairy cattle should be treated only during the dry period. Not for animals hypersensitive to the active ingredient. Do not treat more frequently than every 3 weeks. Not for cattle producing milk for human consumption. Not for use in poultry.",
-    withdrawal: "Meat: 60 days",
-    storage: "Store below 30°C, away from direct sunlight.",
-    packaging: "Glass vial, 100 ml.",
-    manufacturer: "Arabcomed for Drugest Pharmaceuticals Company",
-  },
-  {
     slug: "bekatest-10-injection",
     name: "Bekatest 10%",
     subtitle: "Injectable solution",
@@ -212,50 +193,6 @@ export const products: Product[] = [
     manufacturer: "Arabcomed for Drugest Pharmaceuticals Company",
   },
   {
-    slug: "nova-500",
-    name: "Nova 500",
-    subtitle: "Injectable solution",
-    category: "large-animals",
-    form: "injection",
-    activeIngredient: "Dipyrone",
-    composition: "Each 1 ml contains:\nDipyrone 500 mg",
-    properties:
-      "A pyrazolone derivative with marked analgesic, antipyretic and mild anti-inflammatory activity, and antispasmodic effect on bradykinin-induced intestinal spasm.",
-    indications:
-      "Pain relief (colic, neuritis, neuralgia, tendovaginitis, calming during examination); inflammatory conditions (arthritis, lumbago, rheumatic disorders); spastic conditions (colic, intestinal and smooth-muscle spasm).",
-    dosage:
-      "I.M. or slow I.V.\nCattle: 5 ml / 50 kg body weight. Horses: 10–20 ml (5–10 g) per adult horse. Pigs: 1 ml / 10 kg body weight. Dogs & cats: 0.6 ml / 10 kg body weight.",
-    warnings:
-      "Not for cattle producing milk for human consumption. Do not co-administer with phenylbutazone or barbiturates — combination with chlorpromazine may cause serious hypothermia. In horses, avoid within 5 days of racing. Check blood picture with prolonged use. Not for poultry. Total daily dose in dogs/cats should not exceed 300 mg/animal. I.M. or slow I.V. only — not S/C.",
-    sideEffects: "Agranulocytosis and leucopenia may develop at high doses.",
-    withdrawal: "Meat: 28 days",
-    storage: "Store in a cool place, away from direct sunlight.",
-    packaging: "Glass vials of 30, 50, 100, 200, 250 & 500 ml. Made in Egypt.",
-    manufacturer: "Arabcomed for Drugest Pharmaceuticals Company",
-  },
-  {
-    slug: "sulphaject-33-3",
-    name: "Sulphaject 33.3",
-    subtitle: "Injectable solution",
-    category: "large-animals",
-    form: "injection",
-    activeIngredient: "Sulphadimidine Sodium",
-    composition:
-      "Each 100 ml contains:\nSulphadimidine sodium 33.3 g\n(equivalent to Sulphadimidine base 30 g)",
-    properties:
-      "A sulphonamide that blocks conversion of PABA to dihydrofolic acid in sensitive micro-organisms, interfering with nucleic-acid synthesis without affecting host cells.",
-    indications:
-      "Broad range of infections caused by sensitive Gram-positive and Gram-negative bacteria (Pasteurella, Salmonella, E. coli, Fusobacterium necrophorum, Streptococcus spp.) affecting the respiratory, urogenital or gastrointestinal systems or soft tissue — bacterial pneumonia, bovine respiratory disease complex, colibacillosis, necrotic dermatitis, calf diphtheria, acute mastitis and metritis.",
-    dosage:
-      "200 mg/kg body weight, then reduced to 100 mg/kg.\nCattle, buffaloes & horses: 1st dose 200 ml / 300 kg, 2nd dose 100 ml / 300 kg, for 5 days.\nCalves: 1st dose 40 ml / 60 kg, 2nd dose 20 ml / 60 kg, for 5 days.\nSheep & goats: 1st dose 20 ml / 30 kg, 2nd dose 10 ml / 30 kg, for 5 days.",
-    warnings:
-      "By I.M. or slow I.V. Not for sulphonamide hypersensitivity. I.V. use in horses may risk anaphylactic shock. Avoid in renal or hepatic impairment. Overdose may cause muscular twitching, coma or liver damage. Maintain adequate fluid intake during treatment. Transient injection-site irritation possible. Not for lactating animals.",
-    withdrawal: "Meat: 10 days",
-    storage: "Store in a cool place, away from direct sunlight.",
-    packaging: "Amber glass vial, 100 ml.",
-    manufacturer: "Arabcomed for Drugest Pharmaceuticals Company",
-  },
-  {
     slug: "streptotest-injection",
     name: "Streptotest",
     subtitle: "Injection",
@@ -343,29 +280,6 @@ export const products: Product[] = [
     withdrawal: "Poultry: 10 days. Calves & lambs: 21 days.",
     storage: "Store in a cool, dry place at room temperature.",
     packaging: "500 g.",
-    manufacturer: "Arabcomed for Drugest Pharmaceuticals Company",
-  },
-  {
-    slug: "maduratest",
-    name: "Maduratest",
-    subtitle: "Premix, Maduramicin 1%",
-    category: "poultry",
-    form: "powder",
-    activeIngredient: "Maduramicin Ammonium",
-    composition:
-      "Each 1 kg contains:\nMaduramicin ammonium 12.20 g\n(equivalent to maduramicin base 10 g)",
-    properties:
-      "A broad-spectrum ionophore anticoccidial effective against Eimeria tenella, E. acervulina, E. necatrix, E. maxima, E. mivati, E. brunetti and other coccidia in poultry, disrupting ion transport across the coccidial cell membrane and targeting sporozoites and merozoites.",
-    indications: "Prevention of coccidiosis in broilers.",
-    dosage:
-      "Active ingredient: 5 ppm in finished feed.\nWhole product: 0.5 kg / tonne of feed, continuously as the sole ration.",
-    warnings:
-      "Prohibited for use in layers, as the compound accumulates in eggs. Do not administer simultaneously with tiamulin, or within 7 days before or after tiamulin. Store in a cool, dry place away from sunlight. Mix thoroughly with feed.",
-    sideEffects:
-      "None at recommended doses. Toxic effects possible at high doses in laying hens and to the embryo. Toxic to horses and equines.",
-    withdrawal: "Broilers: 5 days",
-    storage: "Store in a cool, dry place away from sunlight.",
-    packaging: "Laminated bag, 500 g.",
     manufacturer: "Arabcomed for Drugest Pharmaceuticals Company",
   },
   {
